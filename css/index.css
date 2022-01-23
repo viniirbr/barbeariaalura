@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    height: 150px;
+    font-size: 1.2em;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+}
+
+.header__nav-item {
+    transition: 0.5s all;
+}
+
+.header__nav-item:hover {
+    color: #7D5C50;
+    transform: scale(1.05);
+}
+
+.main__first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 210px);
+    padding-top: 0;
+}
+
+.main__intro {
+    width: 40%;
+}
+
+.main__intro-title {
+    width: 80%;
+}
+
+.main__intro-slogan {
+    font-size: 1.5em;
+    text-align: center;
+    width: 80%;
+}
+
+.main__barber-img {
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+    object-position: 80% 0;
+}
+
+.main__sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 35px);
+    padding: 10px;
+}
+
+.main__sobre-title {
+    width: 60%;
+    margin: 40px 0;
+}
+
+.main__sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+}
+
+.main__sobre-img {
+    width: 35%;
+    min-width: 300px;
+}
+
+.main__sobre-text {
+    width: 50%;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.main__localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__localizacao-title {
+    width: 60%;
+}
+
+.main__beneficios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 200px;
+    height: calc(100vh - 100px);
+}
+
+.active {
+    display: none;
+}
+
+.main__beneficios-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__beneficios-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 40%;
+}
+
+.main__beneficios-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    box-shadow: normal;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 10px;
+    transition: background 0.5s ease-in color 0.5s ease-in;
+}
+
+.main__beneficios-sortdown {
+    width: 15%;
+}
+
+.main__beneficios-button:hover {
+    box-shadow: none;
+    transform: none;
+    background: #333;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.beneficios__field-description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main__beneficios-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.main__beneficios-img {
+    width: 400px;
+}
+
+
