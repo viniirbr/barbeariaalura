@@ -1,9 +1,13 @@
-const buttonElement = document.querySelector('.main__beneficios-button');
+const buttonElement = document.querySelectorAll('.main__beneficios-button')
 const descriptionElement = document.querySelector('.beneficios__field-description')
 const sortDownElement = document.querySelector('.main__beneficios-sortdown')
 
-buttonElement.addEventListener("click", () => {
-    descriptionElement.classList.toggle('active');
-    console.log(descriptionElement.classList);
-})
+
+function displayText(element, index, array) {
+    element.addEventListener('click', () => {
+        element.nextElementSibling.classList.toggle('active')
+    })
+}
+
+buttonElement.forEach(displayText)
 
