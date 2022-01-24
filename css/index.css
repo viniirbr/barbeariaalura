@@ -1,35 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap');
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 150px;
-    height: 150px;
-    font-size: 1.2em;
-}
-
-.header__logo {
-    width: 100px;
-}
-
-.header__nav {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.3rem;
-}
-
-.header__nav-item {
-    transition: 0.5s all;
-}
-
-.header__nav-item:hover {
-    color: #7D5C50;
-    transform: scale(1.05);
-}
-
 .main__first {
     display: flex;
     justify-content: space-around;
@@ -139,7 +107,7 @@
 }
 
 .main__beneficios-sortdown {
-    width: 15%;
+    width: 30px;
 }
 
 .main__beneficios-button:hover {

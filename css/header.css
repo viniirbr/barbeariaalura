@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 130px;
+    font-size: 1.2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    width: 15%;
+    max-width: 100px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+}
+
+.header__nav-item {
+    transition: 0.5s all;
+}
+
+.header__nav-item:hover {
+    color: #7D5C50;
+    transform: scale(1.05);
+}

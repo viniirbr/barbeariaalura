@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/agendar.css">
+    <title>Barbearia Alura - Agende seu corte!</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="img/logo.png">
+        <nav class="header__nav">
+            <a class="header__nav-item" href="index.html">HOME</a>
+            <a class="header__nav-item" href="produtos.html">CORTES</a>
+            <a class="header__nav-item" href="#sobre">SOBRE NÓS</a>
+            <a class="button" href="agendar.html">AGENDE UM CORTE</a>
+        </nav>
+    </header>
+    <main id="agendarMain">
+        <form class="form" action="">
+            <div id="nameRegister" class="form-section">
+                <label for="nameInput" id="form-label" class="form-label">Nome e sobrenome</label>
+                <input type="text" id="nameInput" class="form-input">
+            </div>
+            <div id="emailRegister" class="form-section">
+                <label for="emailInput" id="emailRegister__label" class="form-label">Email</label>
+                <input type="email" id="emailInput" class="form-input">
+            </div>
+            <div id="calendarRegister" class="form-section">
+                <label for="calendarInput" class="form-label">Escolha o melhor dia e horário para você.</label>
+                <div id="selectDateTime">
+                    <input type="date" id="calendarInput">
+                    <table>
+                        <tr>
+                            <th>8:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>9:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>10:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>11:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>15:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>16:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>17:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>18:00</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>19:00</th>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>    
+            </div>
+            
+            <button id="buttonSendForm" class="button agendar-button">Confirmar agendamento</button>
+        </form>
+        
+    </main>
+    
+</body>
+</html>
