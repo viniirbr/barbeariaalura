@@ -1,11 +1,17 @@
 const buttonElement = document.querySelectorAll('.main__beneficios-button')
-const descriptionElement = document.querySelector('.beneficios__field-description')
-const sortDownElement = document.querySelector('.main__beneficios-sortdown')
 
+function displayText(button) {
+    button.addEventListener('click', () => {
+        const descriptionClass = button.nextElementSibling.classList
+        const sortDownIcon = button.children[1]
+        sortDownIcon.style.transition = "all 0.3s"
+        descriptionClass.toggle('active')
+        if (descriptionClass.contains('active')) {
+            sortDownIcon.style.transform = "rotate(180deg)"
+        } else {
+            sortDownIcon.style.transform = "rotate(0)"
+        }
 
-function displayText(element, index, array) {
-    element.addEventListener('click', () => {
-        element.nextElementSibling.classList.toggle('active')
     })
 }
 
