@@ -10,15 +10,11 @@
     <title>Barbearia Alura - Agende seu corte!</title>
 </head>
 <body>
-    <div aria-live="polite" aria-atomic="true" id="toast-place">
-        <div class="toast" data-delay='3000'>
-            <div class="toast-body">
-              Agendamento concluido!
-            </div>
-          </div>
+    <div class="toast-place">
+        
     </div>
     <header class="header">
-        <img class="header__logo" src="img/logo.png">
+        <a href="index.html"><img class="header__logo" src="img/logo.png"></a>
         <nav class="header__nav">
             <a class="header__nav-item" href="index.html">HOME</a>
             <a class="header__nav-item" href="produtos.html">CORTES</a>
@@ -29,7 +25,7 @@
     <main id="agendarMain">
         <form class="form" action="">
             <div id="nameRegister" class="form-section">
-                <label for="nameInput" id="form-label" class="form-label">Nome e sobrenome</label>
+                <label for="nameInput" id="nameRegister-label" class="form-label">Nome e sobrenome</label>
                 <input type="text" id="nameInput" class="form-input" placeholder="Seu nome...">
             </div>
             <div id="emailRegister" class="form-section">
@@ -40,7 +36,7 @@
                 <label for="calendarInput" class="form-label">Escolha o melhor dia e horário para você.</label>
                 <div id="selectDateTime">
                     <input type="date" id="calendarInput">
-                    <table>
+                    <table id="time-table">
                         <tr>
                             <th>8:00</th>
                             <td class="cell"></td>
@@ -81,14 +77,15 @@
                 </div>    
             </div>
             
-            <button id="buttonSendForm" class="button agendar-button">Confirmar agendamento</button>
+            <button class="button agendar-button">Confirmar agendamento</button>
         </form>
         
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="javascript/agendar.js"></script>  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="javascript/agendar.js"></script>  
+
 </body>
 </html>
