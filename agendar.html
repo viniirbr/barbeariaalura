@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/agendar.css">
     <title>Barbearia Alura - Agende seu corte!</title>
 </head>
 <body>
+    <div aria-live="polite" aria-atomic="true" id="toast-place">
+        <div class="toast" data-delay='3000'>
+            <div class="toast-body">
+              Agendamento concluido!
+            </div>
+          </div>
+    </div>
     <header class="header">
         <img class="header__logo" src="img/logo.png">
         <nav class="header__nav">
@@ -23,11 +30,11 @@
         <form class="form" action="">
             <div id="nameRegister" class="form-section">
                 <label for="nameInput" id="form-label" class="form-label">Nome e sobrenome</label>
-                <input type="text" id="nameInput" class="form-input">
+                <input type="text" id="nameInput" class="form-input" placeholder="Seu nome...">
             </div>
             <div id="emailRegister" class="form-section">
                 <label for="emailInput" id="emailRegister__label" class="form-label">Email</label>
-                <input type="email" id="emailInput" class="form-input">
+                <input type="email" id="emailInput" class="form-input" placeholder="Seu email...">
             </div>
             <div id="calendarRegister" class="form-section">
                 <label for="calendarInput" class="form-label">Escolha o melhor dia e horário para você.</label>
@@ -36,39 +43,39 @@
                     <table>
                         <tr>
                             <th>8:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>9:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>10:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>11:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>15:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>16:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>17:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>18:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                         <tr>
                             <th>19:00</th>
-                            <td></td>
+                            <td class="cell"></td>
                         </tr>
                     </table>
                 </div>    
@@ -78,6 +85,10 @@
         </form>
         
     </main>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascript/agendar.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap');
+
+
 #agendarMain {
     height: calc(100vh - 125px);
 }
@@ -32,9 +35,10 @@
     border-radius: 20px;
     width: 100%;
     max-width: 300px;
-    height: 20px;
+    height: 40px;
     font-size: 1rem;
     border: 1px black solid;
+    text-align: center;
 }
 
 #selectDateTime {
@@ -52,6 +56,11 @@ table, th, td, tr {
 
 th, td, tr {
     padding: 5px;
+}
+
+td:hover {
+    background: green;
+    cursor: pointer;
 }
 
 .agendar-button {
