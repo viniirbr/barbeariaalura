@@ -1,0 +1,37 @@
+.carousel-container {
+    margin: auto;
+    height: calc(100vh - 130px);
+}
+
+.carousel-caption {
+    color: black;
+    margin-top: 30px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../img/prev.svg')
+}
+
+.next-icon {
+    background-image: url('../img/next.svg')
+}
+
+.carousel-hair {
+    width: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item-title {
+    margin: 0;
+}
+
+.carousel-item-price {
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
