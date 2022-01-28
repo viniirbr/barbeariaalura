@@ -51,3 +51,9 @@ section {
 img {
     border-radius: 10px;
 }
+
+@media screen and (max-width: 750px) {
+    section {
+        margin: 30px auto;
+    }
+}
