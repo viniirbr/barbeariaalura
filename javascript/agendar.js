@@ -3,7 +3,6 @@ const calendarInput = document.getElementById('calendarInput')
 const agendarButton = document.querySelector('.agendar-button')
 const nameInput = document.getElementById('nameInput')
 const emailInput = document.getElementById('emailInput')
-var timeSelected = false
 
 
 calendarInput.value = moment().format('YYYY-MM-DD')
@@ -15,7 +14,6 @@ function saveTime(cell) {
             tableCell[i].style.background='white'
         }
         cell.style.background = 'green'
-        timeSelected = true
     })
 }
 tableCell.forEach(saveTime)

@@ -24,11 +24,6 @@
     font-size: 1.3rem;
 }
 
-.header__nav-responsive {
-    display: none;
-    cursor: pointer;
-}
-
 .header__nav-item {
     transition: 0.5s all;
 }
@@ -36,6 +31,18 @@
 .header__nav-item:hover {
     color: #7D5C50;
     transform: scale(1.05);
+}
+
+.header__nav-responsive {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.header__nav-responsive:hover {
+    background: #ddd;
 }
 
 .sidebar {
