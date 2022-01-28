@@ -1,6 +1,7 @@
 .carousel-container {
-    margin: auto;
+    margin: 10px;
     height: calc(100vh - 130px);
+    padding: calc(100vh / 5) 0;
 }
 
 .carousel-caption {
@@ -20,11 +21,18 @@
     width: 10px;
 }
 
+.carousel-cap {
+    text-align: center;
+}
+
 .item {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    height: 100%;
+    height: 230px;
+    border: 1px black solid;
+    border-radius: 10px;
 }
 
 .carousel-item-title {
@@ -34,4 +42,14 @@
 .carousel-item-price {
     font-size: 1.7rem;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .item {
+        height: 310px;
+    }
+
+    .carousel-container {
+        padding: calc(100vh / 10) 0;
+    }
 }

@@ -48,7 +48,7 @@
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 30%; }
+    width: 25%; }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
@@ -70,7 +70,7 @@
     padding: 0 !important;
     font: inherit; }
   .owl-carousel.owl-loaded {
-    display: block; }
+    display: block;}
   .owl-carousel.owl-loading {
     opacity: 0;
     display: block; }

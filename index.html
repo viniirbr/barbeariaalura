@@ -12,14 +12,26 @@
 <body>
     <header class="header">
         <a href="index.html"><img class="header__logo" src="img/logo.png"></a>
-        <nav class="header__nav">
+        <nav class="header__nav active-flex">
             <a class="header__nav-item" href="index.html">HOME</a>
             <a class="header__nav-item" href="cortes.html">CORTES</a>
             <a class="header__nav-item" href="#sobre">SOBRE NÓS</a>
             <a class="button" href="agendar.html">AGENDE UM CORTE</a>
         </nav>
+        <nav class="header__nav-responsive">
+            <i class="fas fa-bars menu-responsive"></i>
+        </nav>
+        <aside class="sidebar">
+            <span class="sidebar-close"><i class="fas fa-times"></i></span>
+            <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="index.html">HOME</a>
+                <a class="sidebar-nav-item" href="cortes.html">CORTES</a>
+                <a class="sidebar-nav-item" href="#sobre">SOBRE NÓS</a>
+                <a class="button" href="agendar.html">AGENDE UM CORTE</a>
+            </nav>
+        </aside>
+        
     </header>
-
     <main class="main">
         <section class="main__first">
             <div class="main__intro">
@@ -51,7 +63,7 @@
             </iframe>
         </section>
         <section class="main__beneficios">
-            <h2>Benefícios</h2>
+            <h2 class="main__beneficios-title">Benefícios</h2>
             <div class="main__beneficios-content">
                 <div class="main__beneficios-items">
                     <div class="beneficios__field">
@@ -119,8 +131,11 @@
     <footer class="footer">
         <img class="footer__logo" src="img/logo-branco.png">
     </footer>
-
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    data-auto-a11y="true"
+  ></script>
     <script type="text/javascript" src="javascript/index.js"></script>
-    
+    <script type="text/javascript" src="javascript/headerResponsivity.js"></script>  
 </body>
 </html>

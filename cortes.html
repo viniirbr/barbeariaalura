@@ -14,12 +14,24 @@
 <body>
     <header class="header">
         <a href="index.html"><img class="header__logo" src="img/logo.png"></a>
-        <nav class="header__nav">
+        <nav class="header__nav active-flex">
             <a class="header__nav-item" href="index.html">HOME</a>
             <a class="header__nav-item" href="cortes.html">CORTES</a>
             <a class="header__nav-item" href="#sobre">SOBRE NÓS</a>
             <a class="button" href="agendar.html">AGENDE UM CORTE</a>
         </nav>
+        <nav class="header__nav-responsive">
+            <i class="fas fa-bars menu-responsive"></i>
+        </nav>
+        <aside class="sidebar">
+            <span class="sidebar-close"><i class="fas fa-times"></i></span>
+            <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="index.html">HOME</a>
+                <a class="sidebar-nav-item" href="cortes.html">CORTES</a>
+                <a class="sidebar-nav-item" href="index.html#sobre">SOBRE NÓS</a>
+                <a class="button" href="agendar.html">AGENDE UM CORTE</a>
+            </nav>
+        </aside>      
     </header>
     <main>
         <div class="carousel-container">
@@ -27,19 +39,19 @@
                 <div class="item">
                     <h2 class="carousel-item-title">Cabelo</h2>
                     <img src="img/cabelo.jpg" class="carousel-hair">
-                    <p>Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="carousel-cap">Na tesoura ou máquina, como o cliente preferir</p>
                     <h3 class="carousel-item-price">R$ 25,00</h3>
                 </div>
                 <div class="item">
                     <h2 class="carousel-item-title">Barba</h2>
                     <img src="img/barba.jpg" class="carousel-hair">
-                    <p>Corte e desenho profissional de barba</p>
+                    <p class="carousel-cap">Corte e desenho profissional de barba</p>
                     <h3 class="carousel-item-price">R$ 18,00</h3>
                 </div>
                 <div class="item">
                     <h2 class="carousel-item-title">Cabelo+Barba</h2>
                     <img src="img/cabelo+barba.jpg" class="carousel-hair">
-                    <p>Pacote completo de cabelo e barba</p>
+                    <p class="carousel-cap">Pacote completo de cabelo e barba</p>
                     <h3 class="carousel-item-price">R$ 35,00</h3>
                 </div>
             </div>
@@ -48,5 +60,10 @@
     </main>
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/owl.carousel.js"></script>  
-    <script src="javascript/setup.js"></script>  
+    <script src="javascript/setup.js"></script>
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    data-auto-a11y="true">
+    </script>
+    <script type="text/javascript" src="javascript/headerResponsivity.js"></script>  
 </body>
