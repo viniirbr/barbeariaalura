@@ -143,6 +143,10 @@
     min-width: 325px;
 }
 
+.active-index {
+    display: block;
+}
+
 @media screen and (max-width: 750px) {
     .main__first {
         flex-direction: column;
@@ -228,6 +232,14 @@
 
     .main__barber-img {
         width: 340px;
+    }
+
+    .main__localizacao-title {
+        width: 90%;
+    }
+
+    .main__beneficios {
+        height: initial;
     }
 }
     

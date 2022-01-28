@@ -48,19 +48,29 @@
     width: 50%;
 }
 
+#calendarInput {
+    text-align: center;
+}
+
 table, th, td, tr {
     border: 1px solid black;
     font-size: .8rem;
-    width: 100px
+    width: 100px;
+    border-collapse: initial;
+    text-align: center;
 }
 
 th, td, tr {
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 td:hover {
     background: green;
     cursor: pointer;
+}
+
+td {
+    width:40px;
 }
 
 .agendar-button {

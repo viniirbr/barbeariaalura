@@ -5,8 +5,8 @@ function displayText(button) {
         const descriptionClass = button.nextElementSibling.classList
         const sortDownIcon = button.children[1]
         sortDownIcon.style.transition = "all 0.3s"
-        descriptionClass.toggle('active')
-        if (descriptionClass.contains('active')) {
+        descriptionClass.toggle('active-index')
+        if (descriptionClass.contains('active-index')) {
             sortDownIcon.style.transform = "rotate(180deg)"
         } else {
             sortDownIcon.style.transform = "rotate(0)"
